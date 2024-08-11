@@ -10,7 +10,7 @@ export default function Navbar() {
         <nav className='mb-20 flex justify-between items-center py-6 px-6'>
         <div className='flex flex-shrink-0 items-center'>  
           <motion.img 
-            animate={{opacity:1,x:100}}
+            animate={{opacity:1,x:0}}
             initial={{opacity:0,x:-100}}
             transition={{duration:1}}
             className='rounded-full'src={logo} width={80}
