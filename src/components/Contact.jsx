@@ -1,4 +1,6 @@
 import {motion} from "framer-motion"
+import {MdEmail} from 'react-icons/md'
+import {FaPhone} from 'react-icons/fa6'
 export default Contact=>{
     return(
         <div className="border-b border-neutral-900 pb-20">
@@ -12,9 +14,12 @@ export default Contact=>{
             initial={{opacity:0,x:-100}}
             transition={{duration:1}}
             className="text-center tracking-tighter">
-                <p className="my-4">+91 8904690153</p>
+                <div className="flex flex-wrap items-center justify-center space-x-3">
+                    <FaPhone/>
+                <p className="my-4">+91 8904690153</p></div>
+                <div className="flex items-center space-x-3 justify-center"><MdEmail className="my-1"/>
                 <a href="mailto:amogha0711@gmail.com" target="_blank">
-                amogha0711@gmail.com</a>
+                amogha0711@gmail.com</a></div>
             </motion.div>
         </div>
     )
